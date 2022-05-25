@@ -1,0 +1,1 @@
+sudo docker build -t my_first_image_py .
