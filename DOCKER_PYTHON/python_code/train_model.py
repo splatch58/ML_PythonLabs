@@ -38,6 +38,7 @@ def train():
     with open(filename, 'wb') as f:
         pickle.dump(model, f)
 
+    # save the standardizer  in order to apply on the vector to predict
     filename2 = './std_scaler.bin'
     with open(filename2,'wb') as f:
         pickle.dump(sc,f)
