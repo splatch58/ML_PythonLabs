@@ -8,6 +8,14 @@ import pickle
 # pylint: disable=E1101
 
 def train():
+
+    """
+    this function will be called in the my_first_api.py
+    in order to train a model. It loads the datas set, train the model and save
+    the model and the standardizer so that we can use it to make a future
+    prediction
+    """
+
     # importing the data
     input_path ='C:/Users/JF5191/Documents/DSTI/ML Python Labs/ML_PythonLabs/DOCKER_PYTHON/python_code/Churn_Modelling.csv'
     df = pd.read_csv(input_path)

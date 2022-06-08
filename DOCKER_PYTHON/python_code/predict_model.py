@@ -2,7 +2,10 @@ import pickle
 import tensorflow as tf
 
 def predict(input_data):
-    
+    """
+    this function will be called in the my_first_api.py
+    in order to make a prediction. It loads the model already trained.
+    """
     filename1 = './std_scaler.bin'
     with open(filename1, 'rb') as f:
         sc = pickle.load(f)
